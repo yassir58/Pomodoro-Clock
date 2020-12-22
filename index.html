@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <script src="https://kit.fontawesome.com/da5e55aecd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+</head>
+<style> 
+
+html{ background-color: #eeeeee;
+    background-image: -webkit-linear-gradient(65deg, #51adcf 50%, #eeeeee 50%);
+    background-repeat: no-repeat;
+    min-height: 900px;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+.intro-sec {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 70px;
+}
+h1 {
+    font-size:3rem;
+    font-weight: 700;
+    color: #4c4c4c;
+    margin: 0;
+}
+.myButton {
+	background-color:#51adcf;
+    width: auto;
+	border-radius:28px;
+	border:none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:15px ;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #51adcf;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myButton:hover {
+	background-color:#0278ae;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+    border: none;
+}
+
+.session-card {
+    margin-top: 20px;
+    width: 350px;
+    height: 350px;
+    display: none;
+    background: #eeeeee;
+    font-weight: 500;
+    border-radius: 50%;
+    border-style:  solid;
+    border-width: 5px;
+    border-color: #0278ae;
+    
+    justify-content: center;
+    box-shadow: 2px 5px 10px grey;
+    text-align: center;
+    margin: auto;
+    color: #4c4c4c;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+}
+.main-sec {
+    display: grid;
+    justify-content: center;
+}
+.progress {
+    border: none;
+    border-radius: 15px;
+    width: 300px;
+    background: none;
+    height: 12px;
+    background: #51adcf;
+}
+.progress-bar {
+    width: 300px;
+    background: linear-gradient(to left ,#00587a 30%,#0278ae 60%);
+    height: 12px;
+    border-radius: 15px;
+    border: none;
+}
+header {
+   padding: 25px;
+   color:  #51adcf;
+    font-family: 'Grandstander', cursive;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 70% 1fr;
+}
+#bar {
+ margin-left: 350px;
+    z-index: 3;
+}
+.nav-links a {
+    font-family: 'Montserrat', sans-serif;
+    color:  white;
+    font-size: 15px;
+    padding: 15px;
+    text-decoration: none;
+    margin: 10px;
+    margin: 10px;
+    font-weight: 400;
+}
+.nav-links  i {
+font-size: 15px;
+margin: 0 18px ;
+color: #ffffff;
+}
+.end {
+    background: linear-gradient(to left ,#00587a 30%,#0278ae 60%);
+    color: white;
+    position:relative;
+    border-radius: 50%;
+    padding: 15px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    top: -70px;
+    right: -270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.end:hover {
+    background: #51adcf ;
+}
+.end:active {
+    border: none;
+    outline: none;
+}
+.intro-sec h3 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #4c4c4c;
+    margin: 10px;
+    font-style: italic;
+}
+.checkbox-panel {
+    display: none;
+    margin: auto ;
+    padding:60px ;
+}
+.btns-erea {
+    display:flex;
+    margin: auto;
+}
+button:active { border-style: outset;
+border: none;
+outline: none;}
+#costumeTime {
+    width: 100px ;
+    margin: 0 20px ;
+}
+label {
+    margin: 0 20px;
+}
+.remove {
+    position: relative;
+    top:-70px;
+    right: -740px;
+}
+.remove i {
+    font-size: 18px;
+    color: grey;
+}
+.nav-links {
+    position: absolute;
+    z-index: 1;
+    width: 250px;
+    height: 100vh;
+    top: 0;
+    right:-250px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #00587a;
+    background: linear-gradient(60deg ,#00587a 30%,#0278ae 60%);
+}
+@media only screen  and (max-width:700px){
+ .main {
+    overflow-x: hidden;
+       
+        position: relative;
+        width: 100%;
+
+ }
+.checkbox-panel {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+#bar {
+    margin-left: 50px;
+}
+
+
+}
+.pause-btn {
+    background: linear-gradient(to left ,#00587a 30%,#0278ae 60%);
+    color: white;
+    position: relative;
+    bottom: -100px;
+    border-radius: 50%;
+    padding: 15px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right:auto;
+   
+}
+.pause-btn:hover {
+    background: #51adcf ;
+}
+.pause-btn:active {
+    outline: none;
+    border: none;
+}
+</style>
+<body >
+  <section class="main">
+    <header>Focus app
+        <div class="nav-links">
+            <a href=""><i class="fas fa-cog"></i> Setting</a>
+         <a href=""><i class="far fa-bookmark"></i> Bookmark</a>
+         <a onclcick="handleClick()"id="start"><i class="fas fa-plus"></i> Start session </a>
+        
+        </div>
+        <a id="bar" href="#"><i class="fas fa-bars "></i></a>
+     </header>
+ 
+     <section class="main-sec">
+         <div class="intro-sec">
+             <h1>Start your session</h1>
+             
+            
+            <div class="btns-erea">
+             <button class="myButton btn btn-primary" onclick="handleClick()">start </button>
+             <button class=" costume-btn myButton btn btn-primary"  >Select Duration</button>
+            
+            </div>
+            <div class="checkbox-panel card light-grey darken-1">
+             <a href="" onclick="remove()" class="remove"><i class="fas fa-times fa-2x"></i></a>
+             <label for="15min">
+ 
+                 <input type="checkbox" name="" id="15min">
+                 <span>15 Minute</span>
+             </label>
+             
+             <label for="30min">
+ 
+                 <input type="checkbox" name="" id="30min">
+                 <span>30 Minute</span>
+             </label>
+             
+             <label for="45min"> 
+                 
+                 <input type="checkbox" name="" id="45min">
+                 <span>45 Minute</span>
+             </label>
+            
+ <label for="costumTime">costume time</label>
+             <input type="number" name="" id="costumeTime">
+         </div>
+         </div>
+         
+         <div class="session-card">
+             <button class="end" onclick="end()"><i class="fas fa-times fa-2x"></i></button>
+             
+             <h1 class="time"></h1>
+             <div class="progress">
+ <div class="progress-bar" data-done=""></div>
+         </div>
+         <button class="pause-btn"><i class="fas fa-pause"></i></button>
+         </div>
+       
+     </section>
+  </section>
+<script src="script.js"></script>
+</body>
+</html>
